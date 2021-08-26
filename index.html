@@ -7,44 +7,23 @@
     <title>Shybs crossword</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-    <style>
-      .sc{
-        display: none;
-      }
-      td {
-        width: 25px;
-        height: 25px;
-      }
-
-      .b {
-        border: 1px Solid black;
-      }
-      .box {
-        width: 25px;
-        height: 25px;
-        text-align: center;
-
-        font-size: 14px;
-      }
-
-      .butt {
-        background-color: #ffa500;
-        color: #ffffff;
-        padding: 15px;
-      }
-      
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
   </head>
 
   <body>
     <div class="container-fluid">
+
+      <h1>SHYB's<br> crossword</h1><br><br>
       <form method="POST" autocomplete="off" name="google-sheet">
-        Name<input type="text" name="name" id="name" required /> <br />
+        <label>Name: </label><input type="text" name="name" id="name" required /> <br />
         <br />
-        Unit name  
-        <select name="unit" id="cars" required>
+        <label> Unit: </label>
+        <select class="unit" name="unit" id="cars" required>
           <option value="St. Alphonsa unit">St. Alphonsa unit</option>
-          <option value="Blessed Chavara unit">Blessed Chavara unit</option>
+          <option value="St. Chavara unit">St. Chavara unit</option>
           <option value="St. Don Bosco unit">St. Don Bosco unit</option>
           <option value="St. Marys unit">St. Marys unit</option>
           <option value="St. Jude unit">St. Jude unit</option>
@@ -60,7 +39,7 @@
           <option value="Infant Jesus unit">Infant Jesus unit</option>
           <option value="audi">Sacred Heart unit</option>
         </select><br /><br />
-        Mobile number<input type="text" name="mobile_no" required /><br />
+       <label>Mobile number: </label> <input type="text" name="mobile_no" required /><br />
         <br />
         <table>
           <tbody>
@@ -1252,7 +1231,7 @@
         <div class="down  ">
           <h1>Down</h1><br /> 
          <p> 2. What was Shadrach's real name?</p>  
-         <p>3.What different name did the king give to Daniel ?</p> 
+         <p>3. What different name did the king give to Daniel ?</p> 
          <p>5. Which part of the item in the king's vision was part iron and part
           fired clay? </p> 
           <p>6. Who pleaded with the king not to kill the wise men and to give him
