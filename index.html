@@ -1214,7 +1214,7 @@
         <center
         ><input type="submit" value="Submit" onclick="data()" class="butt"
         /></center>
-        <input value=" " name="score" id="score" class="sc" /> 
+        <input type="text" value=" " name="score" id="score" class="sc"  /> 
       </form>
 
       <div class="questions container-fluid">
@@ -1371,7 +1371,7 @@
             cnt++;
           }
         }
-       // document.getElementById("score").defaultValue = cnt;
+        document.getElementById("score").defaultValue = cnt;
         const navv = document.getElementById("name").value;
         const final = cnt;
         console.log(cnt);
