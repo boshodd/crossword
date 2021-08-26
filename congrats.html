@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/>
+     
+    
+
+    <STYLE>
+        .main{
+             height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+        .sub{
+            height: 50vh;
+             padding-top: 140px;
+            text-align: center;
+            background-color: #F39C12;
+            font-size: 18px;
+
+        }
+    </STYLE>
+</head>
+<body>
+    <div class="ui raised very padded text container segment">
+        <div class="sub">
+            Congratulation <span id="navv"></span>!!<br/>
+             
+             Your score is: <span id="result">  </span>
+        </div>
+
+    </div>
+
+    
+    <script>
+        // Retrieve
+        var f=localStorage.getItem("cnt");
+        var g=localStorage.getItem("navv");
+        console.log(f)
+   document.getElementById("result").innerHTML =f +" /10";
+   document.getElementById("navv").innerHTML =g ;
+    </script>
+</body>
+</html>

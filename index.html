@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        td {
+          width: 25px;
+          height: 25px;
+        }
+  
+        .b {
+          border: 1px Solid black;
+        }
+        .box {
+          width: 25px;
+          height: 25px;
+          text-align: center;
+  
+          font-size: 14px;
+        }
+  
+        .butt {
+          background-color: #ffa500;
+          color: #ffffff;
+          padding: 15px;
+        }
+      </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+        <form method="POST" autocomplete="off" name="google-sheet">
+          Name<input type="text" id="name" required/> <br />
+          <br />
+          Unit name<input type="text" name="unit" required /> <br /><br />
+          Mobile number<input type="text" name="mobile_no" required /><br />
+          <br />
+    <table>
+      <tbody>
+        <tr>
+          <td class="nb" title="0, 0" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="0, 1" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="0, 2" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="0, 3" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="0, 4" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="0, 5" style="height: 30px; width: 30px"></td>
+          <td class="b" title="0, 6" style="height: 30px; width: 30px"><input class="box" id="06" type="text" placeholder="3" required/></td>
+          <td class="nb" title="0, 7" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="0, 8" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="0, 9" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="0, 10" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="0, 11" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="0, 12" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="0, 13" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="0, 14" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="0, 15" style="height: 30px; width: 30px"></td>
+        </tr>
+        <tr>
+          <td class="nb" title="1, 0" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="1, 1" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="1, 2" style="height: 30px; width: 30px"></td>
+          <td class="b" title="1, 3" style="height: 30px; width: 30px"><input class="box" id="13" type="text"  placeholder ="2" required/>
+          </td>
+          <td class="nb" title="1, 4" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="1, 5" style="height: 30px; width: 30px"></td>
+          <td class="b" title="1, 6" style="height: 30px; width: 30px"><input class="box" id="16" type="text" required/></td>
+          <td class="nb" title="1, 7" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="1, 8" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="1, 9" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="1, 10" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="1, 11" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="1, 12" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="1, 13" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="1, 14" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="1, 15" style="height: 30px; width: 30px"></td>
+        </tr>
+        <tr>
+          <td class="nb" title="2, 0" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="2, 1" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="2, 2" style="height: 30px; width: 30px"></td>
+          <td class="b" title="2, 3" style="height: 30px; width: 30px"><input class="box" id="23" type="text" required/></td>
+          <td class="nb" title="2, 4" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="2, 5" style="height: 30px; width: 30px"></td>
+          <td class="b" title="2, 6" style="height: 30px; width: 30px"><input class="box" id="26" type="text" required/></td>
+          <td class="nb" title="2, 7" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="2, 8" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="2, 9" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="2, 10" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="2, 11" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="2, 12" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="2, 13" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="2, 14" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="2, 15" style="height: 30px; width: 30px"></td>
+        </tr>
+        <tr>
+          <td class="nb" title="3, 0" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="3, 1" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="3, 2" style="height: 30px; width: 30px"></td>
+          <td class="b" title="3, 3" style="height: 30px; width: 30px"><input class="box" id="33" type="text" required/> </td>
+          <td class="nb" title="3, 4" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="3, 5" style="height: 30px; width: 30px"></td>
+          <td class="b" title="3, 6" style="height: 30px; width: 30px"><input class="box" id="36" type="text" required/> </td>
+          <td class="nb" title="3, 7" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="3, 8" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="3, 9" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="3, 10" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="3, 11" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="3, 12" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="3, 13" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="3, 14" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="3, 15" style="height: 30px; width: 30px"></td>
+        </tr>
+        <tr>
+          <td class="nb" title="4, 0" style="height: 30px; width: 30px"></td>
+          <td class="b" title="4, 1" style="height: 30px; width: 30px"><input class="box" id="41" type="text"placeholder="1" required/> </td>
+          <td class="b" title="4, 2" style="height: 30px; width: 30px"><input class="box" id="42" type="text" required/></td>
+          <td class="b" title="4, 3" style="height: 30px; width: 30px"><input class="box" id="43" type="text" required/></td>
+          <td class="b" title="4, 4" style="height: 30px; width: 30px"><input class="box" id="44" type="text" required/></td>
+          <td class="b" title="4, 5" style="height: 30px; width: 30px"><input class="box" id="45" type="text" required/></td>
+          <td class="b" title="4, 6" style="height: 30px; width: 30px"><input class="box" id="46" type="text" required/> </td>
+          <td class="b" title="4, 7" style="height: 30px; width: 30px"><input class="box" id="47" type="text" required/></td>
+          <td class="b" title="4, 8" style="height: 30px; width: 30px"><input class="box" id="48" type="text" required/> </td>
+          <td class="nb" title="4, 9" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="4, 10" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="4, 11" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="4, 12" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="4, 13" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="4, 14" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="4, 15" style="height: 30px; width: 30px"></td>
+        </tr>
+        <tr>
+          <td class="nb" title="5, 0" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="5, 1" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="5, 2" style="height: 30px; width: 30px"></td>
+          <td class="b" title="5, 3" style="height: 30px; width: 30px"><input class="box" id="53" type="text" required/></td>
+          <td class="nb" title="5, 4" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="5, 5" style="height: 30px; width: 30px"></td>
+          <td class="b" title="5, 6" style="height: 30px; width: 30px"><input class="box" id="56" type="text" required/> </td>
+          <td class="nb" title="5, 7" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="5, 8" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="5, 9" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="5, 10" style="height: 30px; width: 30px"></td>
+          <td class="b" title="5, 11" style="height: 30px; width: 30px"><input class="box" id="511" type="text" placeholder="6" required/></td>
+          <td class="nb" title="5, 12" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="5, 13" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="5, 14" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="5, 15" style="height: 30px; width: 30px"></td>
+        </tr>
+        <tr>
+          <td class="nb" title="6, 0" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="6, 1" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="6, 2" style="height: 30px; width: 30px"></td>
+          <td class="b" title="6, 3" style="height: 30px; width: 30px"><input class="box" id="63" type="text" required/></td>
+          <td class="nb" title="6, 4" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="6, 5" style="height: 30px; width: 30px"></td>
+          <td class="b" title="6, 6" style="height: 30px; width: 30px"><input class="box" id="66" type="text" required/> </td>
+          <td class="nb" title="6, 7" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="6, 8" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="6, 9" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="6, 10" style="height: 30px; width: 30px"></td>
+          <td class="b" title="6, 11" style="height: 30px; width: 30px"><input class="box" id="611" type="text" required/></td>
+          <td class="nb" title="6, 12" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="6, 13" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="6, 14" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="6, 15" style="height: 30px; width: 30px"></td>
+        </tr>
+        <tr>
+          <td class="nb" title="7, 0" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="7, 1" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="7, 2" style="height: 30px; width: 30px"></td>
+          <td class="b" title="7, 3" style="height: 30px; width: 30px"><input class="box" id="73" type="text" required/></td>
+          <td class="nb" title="7, 4" style="height: 30px; width: 30px"></td>
+          <td class="b" title="7, 5" style="height: 30px; width: 30px"><input class="box" id="75" type="text" placeholder="8" required/> </td>
+          <td class="b" title="7, 6" style="height: 30px; width: 30px"><input class="box" id="76" type="text" required/> </td>
+          <td class="b" title="7, 7" style="height: 30px; width: 30px"><input class="box" id="77" type="text" required/> </td>
+          <td class="b" title="7, 8" style="height: 30px; width: 30px"><input class="box" id="78" type="text" required/> </td>
+          <td class="b" title="7, 9" style="height: 30px; width: 30px"><input class="box" id="79" type="text" required/></td>
+          <td class="b" title="7, 10" style="height: 30px; width: 30px"><input class="box" id="710" type="text" required/> </td>
+          <td class="b" title="7, 11" style="height: 30px; width: 30px"><input class="box" id="711" type="text" required/> </td>
+          <td class="nb" title="7, 12" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="7, 13" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="7, 14" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="7, 15" style="height: 30px; width: 30px"></td>
+        </tr>
+        <tr>
+          <td class="nb" title="8, 0" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="8, 1" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="8, 2" style="height: 30px; width: 30px"></td>
+          <td class="b" title="8, 3" style="height: 30px; width: 30px"><input class="box" id="83" type="text" required/> </td>
+          <td class="nb" title="8, 4" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="8, 5" style="height: 30px; width: 30px"></td>
+          <td class="b" title="8, 6" style="height: 30px; width: 30px"><input class="box" id="86" type="text" required/></td>
+          <td class="nb" title="8, 7" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="8, 8" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="8, 9" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="8, 10" style="height: 30px; width: 30px"></td>
+          <td class="b" title="8, 11" style="height: 30px; width: 30px"><input class="box" id="811" type="text" required/></td>
+          <td class="nb" title="8, 12" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="8, 13" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="8, 14" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="8, 15" style="height: 30px; width: 30px"></td>
+        </tr>
+        <tr>
+          <td class="nb" title="9, 0" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="9, 1" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="9, 2" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="9, 3" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="9, 4" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="9, 5" style="height: 30px; width: 30px"></td>
+          <td class="b" title="9, 6" style="height: 30px; width: 30px"><input class="box" id="96" type="text" required/> </td>
+          <td class="nb" title="9, 7" style="height: 30px; width: 30px"></td>
+          <td class="b" title="9, 8" style="height: 30px; width: 30px"><input class="box" id="98" type="text" placeholder="7" required/></td>
+          <td class="nb" title="9, 9" style="height: 30px; width: 30px"></td>
+          <td class="b" title="9, 10" style="height: 30px; width: 30px"><input class="box" id="910" type="text" placeholder="9" required/> </td>
+          <td class="b" title="9, 11" style="height: 30px; width: 30px"><input class="box" id="911" type="text" required/> </td>
+          <td class="b" title="9, 12" style="height: 30px; width: 30px"><input class="box" id="912" type="text" required/></td>
+          <td class="b" title="9, 13" style="height: 30px; width: 30px"><input class="box" id="913" type="text" required/></td>
+          <td class="b" title="9, 14" style="height: 30px; width: 30px"><input class="box" id="914" type="text" required/></td>
+          <td class="b" title="9, 15" style="height: 30px; width: 30px"><input class="box" id="915" type="text" required/> </td>
+        </tr>
+        <tr>
+          <td class="nb" title="10, 0" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="10, 1" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="10, 2" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="10, 3" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="10, 4" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="10, 5" style="height: 30px; width: 30px"></td>
+          <td class="b" title="10, 6" style="height: 30px; width: 30px"><input class="box" id="106" type="text" required/></td>
+          <td class="nb" title="10, 7" style="height: 30px; width: 30px"></td>
+          <td class="b" title="10, 8" style="height: 30px; width: 30px"><input class="box" id="108" type="text" required/></td>
+          <td class="nb" title="10, 9" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="10, 10" style="height: 30px; width: 30px"></td>
+          <td class="b" title="10, 11" style="height: 30px; width: 30px"><input class="box" id="1011" type="text" required/> </td>
+          <td class="nb" title="10, 12" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="10, 13" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="10, 14" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="10, 15" style="height: 30px; width: 30px"></td>
+        </tr>
+        <tr>
+          <td class="b" title="11, 0" style="height: 30px; width: 30px"><input class="box" id="110" type="text"placeholder="4" required/></td>
+          <td class="b" title="11, 1" style="height: 30px; width: 30px"><input class="box" id="111" type="text" required/> </td>
+          <td class="b" title="11, 2" style="height: 30px; width: 30px"><input class="box" id="112" type="text" required/></td>
+          <td class="b" title="11, 3" style="height: 30px; width: 30px"><input class="box" id="113" type="text" required/> </td>
+          <td class="b" title="11, 4" style="height: 30px; width: 30px"><input class="box" id="114" type="text" placeholder="5" required/></td>
+          <td class="b" title="11, 5" style="height: 30px; width: 30px"><input class="box" id="115" type="text" required/></td>
+          <td class="b" title="11, 6" style="height: 30px; width: 30px"><input class="box" id="116" type="text" required/></td>
+          <td class="b" title="11, 7" style="height: 30px; width: 30px"><input class="box" id="117" type="text" required/></td>
+          <td class="b" title="11, 8" style="height: 30px; width: 30px"><input class="box" id="118" type="text" required/></td>
+          <td class="b" title="11, 9" style="height: 30px; width: 30px"><input class="box" id="119" type="text" required/></td>
+          <td class="nb" title="11, 10" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="11, 11" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="11, 12" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="11, 13" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="11, 14" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="11, 15" style="height: 30px; width: 30px"></td>
+        </tr>
+        <tr>
+          <td class="nb" title="12, 0" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="12, 1" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="12, 2" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="12, 3" style="height: 30px; width: 30px"></td>
+          <td class="b" title="12, 4" style="height: 30px; width: 30px"><input class="box" id="124" type="text" required/></td>
+          <td class="nb" title="12, 5" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="12, 6" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="12, 7" style="height: 30px; width: 30px"></td>
+          <td class="b" title="12, 8" style="height: 30px; width: 30px"><input class="box" id="128" type="text" required/></td>
+          <td class="nb" title="12, 9" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="12, 10" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="12, 11" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="12, 12" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="12, 13" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="12, 14" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="12, 15" style="height: 30px; width: 30px"></td>
+        </tr>
+        <tr>
+          <td class="nb" title="13, 0" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="13, 1" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="13, 2" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="13, 3" style="height: 30px; width: 30px"></td>
+          <td class="b" title="13, 4" style="height: 30px; width: 30px"><input class="box" id="134" type="text" required/></td>
+          <td class="nb" title="13, 5" style="height: 30px; width: 30px"></td>
+          <td class="b" title="13, 6" style="height: 30px; width: 30px"><input class="box" id="136" type="text" placeholder="10" required/> </td>
+          <td class="b" title="13, 7" style="height: 30px; width: 30px"><input class="box" id="137" type="text" required/> </td>
+          <td class="b" title="13, 8" style="height: 30px; width: 30px"><input class="box" id="138" type="text" required/></td>
+          <td class="b" title="13, 9" style="height: 30px; width: 30px"><input class="box" id="139" type="text" required/> </td>
+          <td class="nb" title="13, 10" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="13, 11" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="13, 12" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="13, 13" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="13, 14" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="13, 15" style="height: 30px; width: 30px"></td>
+        </tr>
+        <tr>
+          <td class="nb" title="14, 0" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="14, 1" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="14, 2" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="14, 3" style="height: 30px; width: 30px"></td>
+          <td class="b" title="14, 4" style="height: 30px; width: 30px"><input class="box" id="144" type="text" required/></td>
+          <td class="nb" title="14, 5" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="14, 6" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="14, 7" style="height: 30px; width: 30px"></td>
+          <td class="b" title="14, 8" style="height: 30px; width: 30px"><input class="box" id="148" type="text" required/></td>
+          <td class="nb" title="14, 9" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="14, 10" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="14, 11" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="14, 12" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="14, 13" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="14, 14" style="height: 30px; width: 30px"></td>
+          <td class="nb" title="14, 15" style="height: 30px; width: 30px"></td>
+        </tr>
+      </tbody>
+    </table>
+    Score card: <input type="text" value="null" name="score" id="score" />
+    <input type="submit" value="subb"  onclick="data()" class="butt" />
+  </form>
+</div>
+
+<script>
+  function data() {
+      const array=[];
+
+    var a = document.getElementById("41").value;
+    var b = document.getElementById("42").value;
+    var c = document.getElementById("43").value;
+    var d = document.getElementById("44").value;
+    var e = document.getElementById("45").value;
+    var f = document.getElementById("46").value;
+    var g = document.getElementById("47").value;
+    var h = document.getElementById("48").value;
+    const a1 = a + b + c + d + e+f +g+h;
+    array.push(a1);
+
+    var a = document.getElementById("13").value;
+    var b = document.getElementById("23").value;
+    var c = document.getElementById("33").value;
+    var d = document.getElementById("43").value;
+    var e = document.getElementById("53").value;
+    var f = document.getElementById("63").value;
+    var g = document.getElementById("73").value;
+    var h = document.getElementById("83").value; 
+    const d2 = a + b + c + d + e + f + g + h ;
+    array.push(d2);
+
+    var a = document.getElementById("06").value;
+    var b = document.getElementById("16").value;
+    var c = document.getElementById("26").value;
+    var d = document.getElementById("36").value;
+    var e = document.getElementById("46").value;
+    var f = document.getElementById("56").value;
+    var g = document.getElementById("66").value;
+    var h = document.getElementById("76").value;
+    var i = document.getElementById("86").value;
+    var j = document.getElementById("96").value;
+    var k = document.getElementById("106").value;
+    var l = document.getElementById("116").value;
+
+    const d3 = a + b + c + d + e + f + g + h+i+j+k+l;
+    array.push(d3);
+
+    var a = document.getElementById("110").value;
+    var b = document.getElementById("111").value;
+    var c = document.getElementById("112").value;
+    var d = document.getElementById("113").value;
+    var e = document.getElementById("114").value;
+    var f = document.getElementById("115").value;
+    var g = document.getElementById("116").value;
+    var h = document.getElementById("117").value;
+    var i = document.getElementById("118").value;
+    var j = document.getElementById("119").value;
+    const a4 = a + b + c + d+e+f+g+h+i+j;
+    array.push(a4);
+
+
+    var a = document.getElementById("114").value;
+    var b = document.getElementById("124").value;
+    var c = document.getElementById("134").value;
+    var d = document.getElementById("144").value;
+    const d5 = a + b + c + d ;
+    array.push(d5);
+
+    var a = document.getElementById("511").value;
+    var b = document.getElementById("611").value;
+    var c = document.getElementById("711").value;
+    var d = document.getElementById("811").value;
+    var e = document.getElementById("911").value;
+    var f = document.getElementById("1011").value;
+//console.log(array);
+    const d6 = a + b + c + d + e + f;
+    array.push(d6);
+
+    var a = document.getElementById("98").value;
+    var b = document.getElementById("108").value;
+    var c = document.getElementById("118").value;
+    var d = document.getElementById("128").value;
+    var e = document.getElementById("138").value;
+    var f = document.getElementById("148").value;
+
+    const d7 = a + b + c + d + e + f ;
+    array.push(d7);
+ 
+    var a = document.getElementById("75").value;
+    var b = document.getElementById("76").value;
+    var c = document.getElementById("77").value;
+    var d = document.getElementById("78").value;
+    var e = document.getElementById("79").value;
+    var f = document.getElementById("710").value;
+    var g = document.getElementById("711").value;
+
+    const a8 = a + b + c + d + e + f + g;
+    array.push(a8);
+
+    var a = document.getElementById("910").value;
+    var b = document.getElementById("911").value;
+    var c = document.getElementById("912").value;
+    var d = document.getElementById("913").value;
+    var e = document.getElementById("914").value;
+    var f = document.getElementById("915").value; 
+    const a9 = a + b + c + d + e + f ;
+    array.push(a9);
+
+    var a = document.getElementById("136").value;
+    var b = document.getElementById("137").value;
+    var c = document.getElementById("138").value;
+    var d = document.getElementById("139").value;  
+    const a10 = a + b + c + d;
+    array.push(a10);
+
+    var arr1 = ["chaldean", "hananiah","belteshazzar","vegetarian", "toes", "daniel","statue","babylon","herald","four"];
+    console.log(array);
+    console.log(arr1);
+    
+    var cnt = 0;
+    for (var i = 0; i<arr1.length; i++) {
+      if (arr1[i].toUpperCase() == array[i].toUpperCase()) {cnt++;}
+    }
+    document.getElementById("score").defaultValue=cnt;
+    const navv= document.getElementById("name").value;
+    const final=cnt;
+    console.log(cnt);
+    localStorage.setItem("cnt", final);
+    localStorage.setItem("navv", navv);
+  }
+</script> 
+<script>
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbyh0NaQw_AYuuMIjeOCQOaa-OvO8DJEOZuRKFu0k2yJyz4i3JangAEH2VmAWjMEf7Rsew/exec";
+  const form = document.forms["google-sheet"];
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => location.replace("file:///C:/xampp/htdocs/crossword/reu.html") 
+
+
+      )
+      .catch((error) => console.error("Error!", error.message));
+  });
+  
+  
+
+</script>
+
+
+  </body>
+</html>
