@@ -1,0 +1,41 @@
+.sc{
+    display: none;
+  }
+  body{
+    background-image: linear-gradient(to bottom right, #f9d423, #ff4e50);
+  }
+  td {
+    width: 25px;
+    height: 25px;
+  }
+  h1,p,label,input,.unit{
+    font-family: 'Merienda', cursive;
+  }
+  
+  h1{
+    text-align: center;
+    padding: 20px;
+
+  }
+
+  .b {
+    border: 1px Solid black;
+  }
+  .box {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+
+    font-size: 14px;
+  }
+
+  .butt {margin-top: 50px;
+    background-color: #ffa500;
+    color: #ffffff;
+    padding: 15px;
+  }
+  .input{
+      border:10px solid white;
+      border-radius: 100px;
+  }
+  
