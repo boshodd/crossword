@@ -42,7 +42,7 @@
           <option value="St. Rita unit">St. Rita unit</option>
           <option value="Little Flower unit">Little Flower unit</option>
           <option value="Infant Jesus unit">Infant Jesus unit</option>
-          <option value="audi">Sacred Heart unit</option>
+          <option value="Sacred Heart unit">Sacred Heart unit</option>
         </select><br /><br />
        <label>Mobile number: </label> <input type="text" name="mobile_no" required /><br />
         <br />
@@ -454,7 +454,7 @@
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) =>
-        console.log("Final time:"+submittime)//location.replace("https://boshodd.github.io/crossword/congrats.html")
+        location.replace("https://boshodd.github.io/crossword/congrats.html")
           )
           .catch((error) => console.error("Error!", error.message));
       });
