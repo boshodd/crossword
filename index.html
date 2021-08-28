@@ -277,6 +277,8 @@
         <input type="text" class="sc" id="time1" name="StartTime" />
         <input type="text" class="sc" id="time2" name="EndTime" /> 
         <input type="text" class="sc" id="time3" name="Minutes spent" />
+        <input type="text" class="sc" id="correct" name="Right ans" />
+        <input type="text" class="sc" id="incorrect" name="Wrong ans" />
       </form>
 
       <div class="questions container-fluid">
@@ -307,11 +309,12 @@
     <script>
       function data() {
         const submittime = new Date();
-          const t2= submittime.getHours()+":"+ submittime.getMinutes()+":"+ submittime.getSeconds(); // => 51
-        console.log("Final time:"+t2)
+        const t2= submittime.getHours()+":"+ submittime.getMinutes()+":"+ submittime.getSeconds(); // => 51
 
         const t3= (submittime.getMinutes() - initialtime.getMinutes()) +"min";
         const array = [];
+        const right = [];
+        const wrong = [];
 
         var a = document.getElementById("03").value;
         var b = document.getElementById("13").value;
@@ -431,12 +434,16 @@
         for (var i = 0; i < arr1.length; i++) {
           if (arr1[i].toUpperCase() == array[i].toUpperCase()) {
             cnt++;
+            right.push(i+1);
           }
+          else{wrong.push(i+1);}
         }
         document.getElementById("score").defaultValue = cnt;
         document.getElementById("time1").defaultValue = t1;
         document.getElementById("time2").defaultValue = t2;
         document.getElementById("time3").defaultValue = t3;
+        document.getElementById("correct").defaultValue = right;
+        document.getElementById("incorrect").defaultValue = wrong;
         const navv = document.getElementById("name").value;
         const final = cnt;
         console.log(cnt);
