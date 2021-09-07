@@ -9,10 +9,12 @@
     height: 25px;
   }
   h1,p,label,input,.unit{
-    font-family: 'Merienda', cursive;
+    
+      font-family: 'Quicksand', sans-serif;
   }
   
   h1{
+      font-family: 'Merienda', cursive;
     text-align: center;
     padding: 20px;
 
