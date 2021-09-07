@@ -450,7 +450,7 @@
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) =>
-        console.log("g")//location.replace("https://boshodd.github.io/crossword/congrats.html")
+        location.replace("https://boshodd.github.io/crossword/congrats.html")
           )
           .catch((error) => console.error("Error!", error.message));
       });
